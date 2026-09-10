@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: rezebot-v2
+    env: docker
+    plan: free
+    autoDeploy: true
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: DATABASE_URL
+        sync: false
+      - key: SESSION_SECRET
+        sync: false
+      - key: PANEL_PUBLIC_URL
+        sync: false
+      - key: OWNER_IDS
+        sync: false
